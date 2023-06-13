@@ -1,0 +1,222 @@
+body{
+    position: relative;
+}
+/* .box-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.box-grid > *{
+    width: 50px;
+    height: 50px;
+}
+h1{
+    color:red;
+    font-size: 20rem;
+    text-align: center;
+} */
+/* .box{
+    
+    padding: 2rem;
+    width: 2rem;
+   
+} */
+/* .box1{
+    background: #f44336;
+    animation: mover 1s ease;
+}
+
+.box2{
+    background: #4caf50;
+    animation: mover-blue 1s ease;
+}
+.box3{
+    background: #2196f3;
+    /* animation: mover-blue 1s ease; 
+}
+.box4{
+    background: #ffc107;
+     animation: mover-blue 1s ease; 
+}
+@keyframes mover{
+    0%{
+        transform: translateX(1000px);
+    }
+}
+@keyframes mover-blue{
+    0%{
+        transform: translateY(1000px);
+    }
+} */
+.wrapper {
+    animation: opac 1s ease infinite;
+    animation-delay: 3.5s;
+    position: relative;
+}
+
+.wrapper, .wrapper1,.wrapper2,.wrapper3{
+    animation: opac 1s ease infinite;
+    animation-delay: 3.5s;
+    z-index: -1
+}
+.wrapper > * {
+width: 50px;
+height: 50px;
+
+}
+.red {
+background: #f44336;
+
+}
+
+@keyframes opac{
+0%{
+opacity: 100%;
+}100%{
+opacity: 0;
+}
+}
+@keyframes mover{
+    0%{
+        transform: translateX(1000px);
+    }50%{
+        transform: translateX(-1000px)
+    }
+}
+.green {
+background: #4caf50;
+}
+@keyframes mover-green{
+    0%{
+        transform: translateY(1000px);
+    }
+    50%{
+        transform: translateY(-1000px)
+    }
+}
+.blue {
+background: #2196f3;
+position: fixed;
+left: 58px;
+top: 8px;
+
+}
+@keyframes mover-blue{
+    0%{
+        transform: translateY(-1000px);
+    }50%{
+        transform: translateY(1000px)
+    }
+}
+.yellow {
+background: #ffc107;
+position: fixed;
+left: 58px;
+top: 58px;
+}
+@keyframes mover-yellow {
+    0%{
+        transform: translateX(-1000px);
+    }50%{
+        transform: translateX(1000px)
+    }
+}
+.wrapper1 {
+    position: fixed;
+    bottom:220px;
+    left:110px;
+}
+.wrapper1 > * {
+    width: 50px;
+    height: 50px;
+    }
+.yellow1 {
+background: #ffc107;
+position: fixed;
+left: 158px;
+bottom: 220px;
+}
+.blue1 {
+background: #2196f3;
+position: fixed;
+left: 158px;
+bottom: 270px;
+}
+.green1 {
+background: #4caf50;
+}
+.red1 {
+background: #f44336;
+}
+
+.yellow, .yellow1,.yellow2, .yellow3{
+    animation: mover-yellow 4s infinite ease;
+}
+.green, .green1,.green2, .green3{
+    animation: mover-green 4s infinite ease;
+}
+.red, .red1,.red2, .red3{
+    animation: mover 4s infinite ease;
+}
+.blue, .blue1,.blue2, .blue3{
+    animation: mover-blue 4s infinite ease;
+}
+.wrapper2 {
+    position: fixed;
+    bottom:20px;
+    right: 10px;
+}
+.wrapper2 > * {
+    width: 50px;
+    height: 50px;
+    }
+    .yellow2 {
+        background: #ffc107;
+        position: fixed;
+        right: 58px;
+        bottom: 20px;
+        }
+        .blue2 {
+        background: #2196f3;
+        position: fixed;
+        right: 58px;
+        bottom: 70px;
+        }
+        .green2 {
+        background: #4caf50;
+        }
+        .red2 {
+        background: #f44336;
+        }
+
+        .wrapper3 {
+            position: fixed;
+            top:200px;
+            right: 110px;
+        }
+        .wrapper3 > * {
+            width: 50px;
+            height: 50px;
+            }
+            .yellow3 {
+                background: #ffc107;
+                position: fixed;
+                right: 158px;
+                top: 200px;
+                }
+                .blue3 {
+                background: #2196f3;
+                position: fixed;
+                right: 158px;
+                top: 250px;
+                }
+                .green3 {
+                background: #4caf50;
+                }
+                .red3 {
+                background: #f44336;
+                }
+.wrappers{
+    z-index: -1;
+}
