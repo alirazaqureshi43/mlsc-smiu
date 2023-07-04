@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/a87d5447bf.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="mobile.css" media = "screen and (max-width: 768px)">
     <link rel="icon" href="/img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
 </head>
 <body >
-    <div class="flex" style="display: flex; justify-content: center; text-align: center;">
+
     <div class="menu2">
         <div class="logo">
         <img src="/img/logo.png" alt="">
         <div class="inside-logo">
-            <p style="font-family: 'Montserrat', sans-serif; font-size: 20px; margin-bottom: 0; ">MICROSOFT LEARN STUDENTS CLUB</p>
-            <p style="font-family: 'Roboto Mono', monospace; font-size: 15px; margin: 0; letter-spacing: 2px; font-weight: bold; opacity: 50%;"> Sindh Madressatul Islam University</p>
+            <p id="p1">MICROSOFT LEARN STUDENTS CLUB</p>
+            <p id="p2"> Sindh Madressatul Islam University</p>
         </div>
-        
     </div>
+
+    
+    <div class="hamburger-menu lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
     <ul class="menu-list">
         <li><a href="index.html">Home</a></li>
         <li><a class="active"  href="about.html"> About Us</a></li>
@@ -27,13 +36,8 @@
         <li><a href="contact.html" >Contact Us</a></li>
     </ul>
     </div>
-</div>
-<!-- <div class="wrapper">
-    <div class="red"></div>
-    <div class="green"></div>
-    <div class="blue"></div>
-    <div class="yellow"></div>
-  </div> -->
+
+
   <div class="wrapper1">
     <div class="red1"></div>
     <div class="green1"></div>
@@ -46,31 +50,35 @@
     <div class="blue2"></div>
     <div class="yellow2"></div>
   </div>
-  <!-- <div class="wrapper3">
-    <div class="red3"></div>
-    <div class="green3"></div>
-    <div class="blue3"></div>
-    <div class="yellow3"></div>
-  </div> -->
+  
     <div class="about container">
         <h1 class="heading">About MLSC SMIU</h1>
         <p>The MLSC SMIU is a group of students who are passionate about technology and want to share their 
        knowledge with others. As part of this community, members have access to various resources and opportunities
         that can help them grow both personally and professionally. One of the main benefits of being part of the 
-        SMIU MLSA community is the opportunity to network with other students and professionals in the field of 
+        MLSC-SMIU is the opportunity to network with other students and professionals in the field of 
         technology. Members can attend events, workshops, and webinars where they can meet like-minded individuals and learn from experts in the industry. 
         This can help them build valuable connections that can lead to future career opportunities.</p>
         <h1 class="heading">Our Partners</h1>
-        
-        <img src="./img/mlsa pakistan.png" alt="datacamp" style="height: 150px;">
-        <img src="./img/mlsa karachi.jpg" alt="datacamp" style="height: 150px;">
-        <a href="https://www.datacamp.com/"><img src="./img/datacamp.png" alt="datacamp" style="height: 50px; "></a>
-    </div>
+        <div class="partner">
+        <img src="./img/mlsa pakistan.png" alt="datacamp" style="height: 150px; padding: 1rem;">
+        <img src="./img/mlsa karachi.jpg" alt="datacamp" style="height: 150px; padding: 1rem;">
+        <a href="https://www.datacamp.com/"><img src="./img/datacamp.png" alt="datacamp" style="height: 50px; padding: 1rem;"></a>
+      </div>
+      </div>
     <footer>
-        <p style="font-size: 1.5rem;">MLSC SMIU</p>
-        <p>Sindh Medrassatul Islam University</p>
-        <p>Karachi, Pakistan</p>
+        <div>
+        <p id="first">MLSC SMIU &copy; All Rights Reserved</p>
+        <p class="second">Sindh Medrassatul Islam University, Karachi, Pakistan.</p>
+      </div>
+
+      <div class="signature second">
+       <p> Design & Develop By Ali Raza</p>
+       <a href="https://www.linkedin.com/in/alirazaqureshi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+       <a href="http://www.aliraza.social"  target="_blank"><img src="img/ar.png" alt=""></a>
+      </div>
     </footer>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script src="menujs.js"></script>
 </body>
 </html>

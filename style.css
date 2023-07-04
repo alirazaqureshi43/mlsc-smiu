@@ -44,6 +44,7 @@ main h2{
   /* padding-bottom: 1rem; */
   font-size: 1.2rem; 
   /* border-bottom:  1px solid white ; */
+ 
 }
 
 main h1, main h2,main img{
@@ -85,7 +86,7 @@ main img{
   border: white solid 1px;
 }
 .menu li {
-  /* margin: 0 1.75rem; */
+  margin: 0 1.75rem; 
   list-style: none;
   cursor: pointer;
 }
@@ -95,53 +96,22 @@ main img{
   background-color: white;
   border: black solid 1px;
 }
-/* .menu2{
-  background: url('/img/smiu1.jpg');
-}
-.menu2 a{
-  margin-top: 4rem;
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
-  border-left: black solid 1px;
-  text-decoration: none;
-  color: black;
-  padding: 0.5rem 1.5rem;
-}
-.menu2 ul{
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem; 
-}
-.menu2 li{
-  margin: 0 1.75rem; 
-  list-style: none;
-  cursor: pointer;
-}
-.menu2 a:hover{
-  color: black;
-  background-color: white;
-  border: black solid 1px;
-} */
-/* .menu2 a:last-child{
-  border-right:white solid 1px;
-} */
-/* .v_line {
-  border-left: 1px solid white;
-  height: 100px;
-  margin: 0 auto;
-   width: 1px;
-   padding: 0;
-}
- */
 .menu2 img{
   height: 80px;
 }
 .menu2{
   display: flex;
+  background-color: white;
+  padding-bottom: 10px;
   flex-direction: row;
   margin-top: 30px;
   align-items: center;
   justify-content: center;
+}
+
+.sticky{
+  position: sticky;
+  top: 0;
 }
 .menu-list{
   display: flex;
@@ -152,6 +122,22 @@ main img{
   text-decoration: none;
   padding: 1rem;
   color: black;
+}
+#p1{
+  font-family: 'Montserrat', sans-serif;
+   font-size: 20px; 
+   margin-bottom: 0;
+}
+#p2{
+  font-family: 'Roboto Mono', monospace; 
+  font-size: 15px; 
+  margin: 0; 
+  letter-spacing: 2px; 
+  font-weight: bold; 
+  opacity: 50%;
+}
+.index-menu{
+  display: none;
 }
 .active, .menu2 a:hover {
   border-bottom: #21395f solid ;
@@ -184,7 +170,6 @@ main img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 3rem 5rem;
   margin: 2rem;
-  z-index: 1;
 }
 .team-member img{
   height: 200px;
@@ -206,21 +191,34 @@ main img{
 
 footer{
   font-weight: bold;
+  padding-top: 4rem;
   margin: 2rem;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   color: #4e4e4e;
 }
-footer:first-child{
+#first{
   font-size: 1.5rem;
+  margin: 5px 0;
 }
-
+.second{
+  font-size: 0.8rem;
+  margin: 0;
+}
+.second p, .second a{
+  margin: 0;
+}
 .about p{
   font-family:'Montserrat', sans-serif;
   color: #4e4e4e;
   text-align:justify;
 }
-
+.partner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .contact{
   text-align: center;
   font-family:'Montserrat', sans-serif;
@@ -241,14 +239,21 @@ footer:first-child{
 .social, .email, .call{
   margin: 2rem;
 }
+.contact i:hover{
+  color: black;
+}
 .event img{
   height: 300px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  object-fit: cover;
 }
 .event{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family:'Montserrat', sans-serif;
   margin-bottom: 2rem;
 }
@@ -429,3 +434,24 @@ background: #f44336;
               background: #f44336;
               }
 /* animation end */
+
+.signature{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signature i{
+  font-size: 1.5rem;
+}
+.signature i:hover{
+  color: black;
+}
+.signature img{
+  height: 0.9rem;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+.signature img:hover{
+  background-color: #4e4e4e;
+}
